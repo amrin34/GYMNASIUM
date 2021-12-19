@@ -1,0 +1,1304 @@
+:root{
+    --brand:#e23e38;
+    --cl-dark: #353535;
+    --cl-p: #777777;
+    --cl-t: #555555;
+    --ff1: 'Oswald', sans-serif;
+    --ff2: 'Open Sans', sans-serif;
+    --over6: rgba(0, 0, 0, 0.6 );
+    --over8: rgba(0, 0, 0, 0.8 );
+    --over9: rgba(0, 0, 0, 0.9 );
+    --fover: rgba(0, 0, 0, 0.85 );
+    --overred: rgba(226, 62, 56, 0.5);
+    --overwhite: rgba(255, 255, 255, 0.5);
+    --twitter: #1da0f2;
+    --bg1: #ddd;
+    --bg2: #eef1f1;
+} 
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+/* ==========================
+    common css ends
+==========================================*/
+
+.osw-reg{
+    font-family: var(--ff1);
+    font-weight: 400;
+}
+.osw-med{
+    font-family: var(--ff1);
+    font-weight: 500;
+}
+.osw-bold{
+    font-family: var(--ff1);
+    font-weight: 700;
+}
+
+.open-reg{
+    font-family: var(--ff2);
+    font-weight: 400;
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-14{
+    font-size: 14px;
+} 
+
+.fs-16{
+    font-size: 16px;
+}
+
+.fs-22{
+    font-size: 22px;
+}
+
+.fs-29{
+    font-size: 29px;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+
+.fs-40{
+    font-size: 40px;
+}
+
+.fs-50{
+    font-size: 50px;
+}
+
+.fs-60{
+    font-size: 60px;
+}
+
+/* =======================================
+                font css ends
+/* ========================================== */
+
+
+header h3{
+    color: var(--cl-dark);
+}
+
+
+/* =======================================
+                header css ends
+==========================================*/
+
+.navbar{
+    background: rgba(35, 35, 35, 0.25);
+    top: 30px;
+    left: 0;
+    z-index: 222;
+}
+
+
+    .navbar .navbar-brand{
+        background:rgba(241, 241, 241, 0.2);
+        padding: 10px 30px !important;
+        transform:skewX(-35deg);
+        z-index: -1;
+    }
+
+
+    .navbar .navbar-brand img{
+        transform: skewX(35deg);
+    }
+
+    .navbar-light .navbar-nav .nav-link{
+        line-height: 50px;
+        padding: 0 10px !important;
+        color: #f1f1f1;
+        position: relative;
+        transition: all linear .4s;
+    }
+
+    .navbar-light .navbar-nav .nav-link :hover{
+        color: var(--cl-dark);
+    }
+    .navbar-light .navbar-nav .nav-link .active{
+        color: var(--cl-dark);
+    }
+    .navbar-light .navbar-nav .nav-link::before{
+        content:'' ;
+        width: 100%;
+        height: 0%;
+        background: #fff;
+        position:absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        transition: all linear .4s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before{
+        height: 100%; 
+
+    }
+
+    .navbar-light .navbar-nav .active::before{
+        height: 100%;
+    }
+
+
+    .navbar-light .navbar-nav .nav-link::after{
+        content:'' ;
+        width: 0%;
+        height: 3px;
+        background: var(--brand);
+        position:absolute;
+        bottom: 0 ;
+        left: 0;
+        z-index: -1;
+        transition: all linear .4s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::after{
+        width: 100%;
+    }
+
+    .navbar-light .navbar-nav .active::after{
+        width: 100%;
+    }
+
+/* ===================
+    navber css ends
+=================== */
+
+#banner .banner-slider .bg1{
+    background: url(../images/banner1.jpg) no-repeat center / cover;
+}
+
+#banner .banner-slider .bg2{
+    background: url(../images/banner2.jpg) no-repeat center / cover;
+}
+
+#banner .banner-slider .bg3{
+    background: url(../images/banner3.jpg) no-repeat center / cover;
+}
+
+#banner .banner-item{
+    position: relative;
+    z-index: 1;
+    padding-top: 245px;
+    padding-bottom: 115px;
+
+}
+
+#banner .banner-item::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--over6);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+#banner .banner-item .banner-text h1{
+    color: var(--brand);
+    margin-top: 10px;
+    margin-bottom: 20px !important;
+}
+
+#banner .bg1 .banner-text h1{
+    position: relative;
+}
+
+#banner .bg1 .banner-text h1::before{
+    content: '';
+    width: 3px;
+    height: 199px;
+    background: var(--brand);
+    position: absolute;
+    left: -10px;
+    top: -23px;
+
+}
+
+#banner .bg1 .banner-text h1::after{
+    content: '';
+    width: 3px;
+    height: 199px;
+    background: var(--brand);
+    position: absolute;
+    right: -10px;
+    top: -23px;
+
+}
+
+#banner .bg1 .banner-text h3{
+    position: relative;
+}
+#banner .bg1 .banner-text h3::before{
+    content: '';
+    width: 167px;
+    height: 3px;
+    background: var(--brand);
+    position: absolute;
+    left: -10px;
+    top: 20px;
+
+}
+
+#banner .bg1 .banner-text h3::after{
+    content: '';
+    width: 118px;
+    height: 3px;
+    background: var(--brand);
+    position: absolute;
+    right: -10px;
+    top: 20px;
+
+}
+
+#banner .bg1 .banner-text p{
+    position: relative;
+    padding: 0 4px;
+}
+
+#banner .bg1 .banner-text p::before{
+    content: '';
+    width: 77px;
+    height: 3px;
+    background: var(--brand);
+    position: absolute;
+    left: -8px;
+    top: 81px;
+}
+
+#banner .bg1 .banner-text p::after{
+    content: '';
+    width: 48px;
+    height: 3px;
+    background: var(--brand);
+    position: absolute;
+    right: -8px;
+    top: 81px;
+}
+
+#banner .banner-item .banner-text p{
+    line-height: 18px;
+}
+
+
+#banner .banner-item .banner-text a{
+    margin-top: 30px;
+    line-height: 34px;
+    padding: 0 15px;
+}
+
+#banner .banner-item .banner-text a:hover{
+    border-color: var(--brand);
+    background: var(--brand);
+    color: #fff;
+}
+
+#banner .banner-item .banner-text a:first-of-type{
+    margin-right: 26px;
+}
+
+
+/* =========================
+    banner-slider slick css
+    ========================= */
+
+    .banner-slider .slick-dots li button{
+        font-size: 0;
+        border: none;
+        outline: none;
+    }
+
+    .banner-slider .slick-dots li {
+        width: 16px;
+        height: 16px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .banner-slider .slick-dots {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        bottom: 15px;
+        transform: translate(-50%);
+    }
+
+    .banner-slider .slick-dots li.slick-active{
+        border-color: var(--brand);
+        background: var(--brand);
+        transform: scale(1.3);
+    }
+
+    .banner-slider .slick-dots li:last-of-type{
+        margin-right: 0;
+    }
+
+
+/* =================== 
+    banner css ends
+=================== */
+
+
+/* =================== 
+    about us start
+=================== */
+
+#about .about-video .about-overly{
+    background: var(--over6);
+}
+
+#about .about-video .about-overly a i{
+    font-size: 56px;
+    color: var(--brand);
+}
+
+#about{
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+}
+#about .about-detail header img{
+    margin-top: -5px;
+
+}
+
+#about .about-detail p{
+    color: var(--cl-p);
+    line-height: 21px;
+    padding: 0 21px;
+}
+#about .about-detail p:first-of-type{
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
+
+/* =================== 
+    about us ends
+=================== */
+
+/* ===============
+gallary css  starts
+======================= */
+#gallery{
+    padding-bottom: 75px;
+}
+
+#gallery .gallery-bg{
+    background: url(../images/gallery-bg.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    margin-top: 25px;
+    padding-top: 30px;
+}
+
+#gallery .gallery-bg::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--over8);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+#gallery .gallery-bg .gallery-item{
+    margin-bottom: 30px;
+}
+
+#gallery .gallery-bg .gallery-item .gallery-overlay{
+    background: var(--overred);
+    border: 5px solid var(--overwhite);
+    transform: scale(.95);
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+
+#gallery .gallery-bg .gallery-item:hover .gallery-overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+#gallery .gallery-bg .gallery-item .gallery-overlay i{
+    color: #fff;
+    font-size: 30px;
+}
+
+
+/* ========================
+    our team starts
+=========================== */
+#team{
+    padding-bottom: 40px;
+}
+
+
+#team .team-member{
+    margin-top: 65px;
+    transition: all linear 0.4s;
+}
+
+#team .team-member:hover{
+    transform: translateY(-40px);
+
+}
+
+#team .team-member .card{
+    border-color: transparent !important;
+    transition: all linear 0.4s;
+} 
+
+#team .team-member:hover .card{
+    border-color: var(--bg1);
+}
+
+#team .team-member .team-image .team-overlay {
+    background: var(--overred);
+    border: 5px solid var(--overwhite);
+    transform: scale(.95);
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+
+#team .team-member:hover .team-image .team-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+
+#team .team-member .team-image .team-overlay a{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#team .team-member .team-image .team-overlay a:last-of-type{
+    margin-bottom: 0;
+
+}
+#team .team-member .team-image .team-overlay i{
+    width: 30px;
+    height: 30px;
+    line-height:  30px;
+    text-align: center;
+    font-size: 16px;
+    transition: all linear 0.4s;
+}
+
+#team .team-member .team-image .team-overlay i:hover{
+    color: var(--twitter);
+}
+
+#team .team-member .card-body h5{
+    color: var(--cl-dark);
+}
+
+#team .team-member .card-body h6{
+    color: var(--cl-t);
+    margin-top: -5px;
+    margin-bottom: 10px !important;
+}
+
+#team .team-member .card-body .card-text{
+    color: var(--cl-p);
+    line-height: 18px;
+    padding: 0 11px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+
+#team .team-member:hover .card-body .card-text{
+    visibility: visible;
+    opacity: 1;
+}
+/* ========================
+    our team css ends
+=========================== */
+
+/* ========================
+    testimonial css start
+=========================== */
+
+#testimonial .testimonial-bg {
+    background: url(../images/testimonial-bg.jpg) no-repeat center / cover;
+    position: relative; 
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    margin-top: 25px;
+} 
+
+#testimonial .testimonial-bg::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--over8);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+/* #testimonial .testimonial-bg .testimonial-iteam{
+    margin-right: 30px;
+} */
+
+#testimonial .testimonial-bg .testimonial-iteam .testimonial-parson-detail .ratings i{
+    color: var(--brand);
+    font-size: 14px;
+}
+
+#testimonial .testimonial-bg .testimonial-iteam .testimonial-text p{
+    line-height: 10px;
+}
+
+.testimonial-slider .slick-dots li button{
+    font-size: 0;
+    border: none;
+    outline: none;
+}
+
+.testimonial-slider .slick-dots li {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.testimonial-slider .slick-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: -60px;
+    transform: translate(-50%); 
+    padding-left: 0;
+}
+
+.testimonial-slider .slick-dots li.slick-active{
+    border-color: var(--brand);
+    background: var(--brand);
+    transform: scale(1.3);
+}
+
+.testimonial-slider .slick-dots li:last-of-type{
+    margin-right: 0;
+}
+
+/* ========================
+    testimonial css ends
+=========================== */
+
+/* ========================
+    membership css starts
+=========================== */
+
+#membership{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#membership header{
+    padding-bottom: 30px;
+}
+
+#membership .membership-item .membership-header{
+    background: var(--bg1);
+}
+
+#membership .membership-item .membership-header h4{
+    color: var(--cl-dark);
+    line-height: 54px;
+    transition: all linear 0.4s;
+}
+
+#membership .membership-item:hover .membership-header h4{
+    background: var(--brand);
+    color: #fff;
+}
+
+#membership .membership-item .membership-price .price-overlay{
+    background: var(--over8);
+}
+
+#membership .membership-item .mebership-features{
+    background: var(--bg2);
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#membership .membership-item .mebership-features ul li{
+    color: var(--cl-t);
+    margin-bottom: 25px;
+}
+
+#membership .membership-item .mebership-features ul li:last-child{
+    margin-bottom: 0;
+}
+#membership .membership-item .membership-btn a{
+    background: var(--bg1);
+    line-height: 34px;
+    transition: all linear 0.4s;
+}
+
+#membership .membership-item:hover .membership-btn a{
+    background: var(--brand);
+    color: #fff;
+}
+/* ========================
+    membership css ends
+=========================== */
+
+
+/* ========================
+    funfact css starts
+=========================== */
+
+#funfact {
+    background: url(../images/slider.jpg) no-repeat center / cover;
+    position: relative; 
+    z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 46px; 
+    
+} 
+
+#funfact::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--over8);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+/* ========================
+    funfact css ends
+=========================== */
+
+/* ========================
+    routine css starts
+=========================== */
+
+#routine{
+    padding-top: 75px; 
+    padding-bottom: 80px;
+}
+
+#routine .routine-menu{
+    margin-bottom: 30px;
+    margin-top: 25px; 
+}
+
+#routine .routine-menu ul li{
+    width: 16.6%;
+}
+
+#routine .nav-tabs{
+    border-bottom: none !important;
+}
+
+#routine .nav-tabs .nav-link{
+    border-radius: 0 !important;
+    background: var(--bg2);
+    color: var(--cl-dark);
+    width: 100%;
+    line-height: 50px;
+    padding: 0;
+}
+
+#routine .nav-tabs .nav-link.active{
+    background: var(--brand);
+    color: #fff;
+}
+#routine .nav-tabs .nav-link:hover{
+    border-color: transparent !important;
+}
+#routine .nav-tabs .nav-link.active{
+    border-color: transparent !important;
+}
+
+#routine .routine-tab ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#routine .routine-tab ul li{
+    background: var(--bg2);
+    width: 19.4%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+#routine .routine-tab ul li.active{
+    background-color: var(--brand);
+    color: #fff;
+}
+/* ========================
+    funfact css ends
+=========================== */
+
+/* ========================
+    brand css starts
+=========================== */
+.brand-slider{
+    padding-bottom: 80px;
+    padding-top: 70px;
+}
+
+.brand-slider .slick-center img{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.brand-slider .slick-track{
+    padding: 10px 0 10px 0;
+}
+
+.brand-slider .slick-slide img {
+    
+    width: 96%;
+}
+
+.brand-slider .prev-arrow{
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 28px;
+    color: var(--cl-dark);
+    transition: all linear 0.4s;
+}
+.brand-slider .prev-arrow:hover{
+    color: var(--brand);
+}
+.brand-slider .next-arrow{
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 28px;
+    color: var(--cl-dark);
+    transition: all linear 0.4s;
+}
+
+.brand-slider .next-arrow:hover{
+    color: var(--brand);
+}
+
+/* ========================
+    brand css ends
+=========================== */
+
+/* ========================
+    footer css starts
+=========================== */
+
+footer{
+    background: url(../images/footer-bg.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+footer::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--fover);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+footer .footer-logo a img{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+footer .footer-main{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer .footer-main::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+footer .footer-main::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+footer .footer-main .footer-item h5{
+    margin-bottom: 30px !important;
+}
+
+footer .footer-main .footer-item .opening-hours li{
+    margin-bottom: 10px;
+}
+
+footer .footer-main .footer-item .opening-hours li:last-child{
+    margin-bottom: 0;
+}
+
+footer .footer-main .footer-item .opening-hours li span{
+    display: inline-block;
+    width: 100px;
+}
+
+footer .footer-main .footer-item .twitter-feed .twit-icon{
+    color: var(--twitter);
+    font-size: 20px;
+}
+
+footer .footer-main .footer-item .twitter-feed li{
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+footer .footer-main .footer-item .twitter-feed li:last-child{
+    margin-bottom: 0;
+    
+}
+
+footer .footer-main .footer-item .flickr li{
+    width: 25%;
+    padding: 5px;
+}
+
+footer .footer-main .footer-item .flickr li img{
+    width: 100%;
+}
+
+footer .footer-main .footer-item .footer-contact{
+    margin-bottom: 30px !important;
+}
+
+footer .footer-main .footer-item .footer-contact li{
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+footer .footer-main .footer-item .footer-contact li i{
+    color: var(--brand);
+}
+
+footer .footer-main .footer-item .footer-social .btn{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 !important;
+    margin-right: 2px;
+}
+
+footer .footer-main .footer-item .footer-social .btn:hover{
+    background: var(--brand);
+    background-color: var(--brand);
+    color: #fff;
+    border: var(--brand);
+}
+
+footer .footer-copy p{
+    line-height: 50px;
+}
+
+footer .footer-copy p a{
+    color: var(--brand);
+}
+/* ========================
+    footer css ends
+=========================== */
+
+/*=====================
+color swicher starts
+========================== */
+
+.color-picker{
+    width: 200px;
+    height: 50px;
+    background: cyan;
+    position: fixed;
+    top: 200px;
+    right: -200px;
+    right: 0;
+    bottom: 30px;
+    z-index: 9999;
+    transition: all linear 0.4s;
+    border-radius: 25px;
+}
+
+.color-pos{
+    right: 0;
+}
+
+.color-picker .color-btn{
+    background: var(--brand);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -30px;
+    top: 10px;
+    border-radius: 50%;
+
+}
+.color-picker .color-btn i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.color-picker ul li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-picker ul li.default{
+    background: var(--brand);
+}
+
+.color-picker ul li.yellow{
+    background: #FFC312;
+}
+
+.color-picker ul li.skyblue{
+    background: #3498db;
+}
+
+.color-picker ul li.purple{
+    background: #B53471;
+}
+
+.color-picker ul li.blue{
+    background: #1B1464;
+}
+
+.color-two{
+    width: 50px;
+    height: 50px;
+    background: var(--brand);
+    right: 30px;
+    bottom: 30px;
+}
+
+.color-two i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.offcanvas{
+    z-index: 999999 !important;
+}
+
+/* .offcanvas ul li{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+} */
+
+.offcanvas ul li{
+    border-radius: 0px 15px 0px;
+    background: #73AD21;
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.offcanvas ul li.default{
+    background: var(--brand);
+}
+
+.offcanvas ul li.yellow{
+    background: #FFC312;
+}
+
+.offcanvas ul li.skyblue{
+    background: #3498db;
+}
+
+.offcanvas ul li.purple{
+    background: #B53471;
+}
+
+.offcanvas ul li.blue{
+    background: #1B1464;
+}
+/*==========================
+    color swicher ends
+========================== */
+
+/*==========================
+    color option starts
+========================== */
+
+/* color starts*/
+
+.yellow .navbar-light .navbar-nav .nav-link::after,
+.yellow #banner .bg1 .banner-text h3::before,
+.yellow #banner .bg1 .banner-text h3::after,
+.yellow #banner .bg1 .banner-text h1::before,
+.yellow #banner .bg1 .banner-text h1::after,
+.yellow #banner .bg1 .banner-text p::before,
+.yellow #banner .bg1 .banner-text p::after,
+.yellow #membership .membership-item:hover .membership-header h4,
+.yellow #membership .membership-item:hover .membership-btn a,
+.yellow #routine .nav-tabs .nav-link.active,
+.yellow #routine .routine-tab ul li.active
+{
+    background: #FFC312;
+}
+
+.yellow #banner .banner-item .banner-text h1,
+.yellow #about .about-video .about-overly a i,
+.yellow #testimonial .ratings i,
+.yellow footer .footer-main .footer-item .footer-contact li i,
+.yellow footer .footer-copy p a
+{
+    color: #FFC312 !important;
+}
+
+.yellow #banner .banner-item .banner-text a:hover,
+.yellow #banner .slick-dots li.slick-active,
+.yellow .testimonial-slider .slick-dots li.slick-active,
+.yellow footer .footer-main .footer-item .footer-social .btn:hover
+{
+    border-color: #FFC312;
+    background: #FFC312;
+}
+
+.yellow #gallery .gallery-bg .gallery-item .gallery-overlay,
+.yellow #team .team-member .team-image .team-overlay
+{
+    background: rgba(255, 196, 18, 0.5);
+}
+
+
+/* yellow color ends */
+
+
+/* skyblue color starts */
+
+.skyblue .navbar-light .navbar-nav .nav-link::after,
+.skyblue #banner .bg1 .banner-text h3::before,
+.skyblue #banner .bg1 .banner-text h3::after,
+.skyblue #banner .bg1 .banner-text h1::before,
+.skyblue #banner .bg1 .banner-text h1::after,
+.skyblue #banner .bg1 .banner-text p::before,
+.skyblue #banner .bg1 .banner-text p::after,
+.skyblue #membership .membership-item:hover .membership-header h4,
+.skyblue #membership .membership-item:hover .membership-btn a,
+.skyblue #routine .nav-tabs .nav-link.active,
+.skyblue #routine .routine-tab ul li.active
+{
+    background: #3498db;
+}
+
+.skyblue #banner .banner-item .banner-text h1,
+.skyblue #about .about-video .about-overly a i,
+.skyblue #testimonial .ratings i,
+.skyblue footer .footer-main .footer-item .footer-contact li i,
+.skyblue footer .footer-copy p a
+{
+    color: #3498db !important;
+}
+
+.skyblue #banner .banner-item .banner-text a:hover,
+.skyblue #banner .slick-dots li.slick-active,
+.skyblue .testimonial-slider .slick-dots li.slick-active,
+.skyblue footer .footer-main .footer-item .footer-social .btn:hover
+{
+    border-color: #3498db;
+    background: #3498db;
+}
+
+.skyblue  #gallery .gallery-bg .gallery-item .gallery-overlay,
+.skyblue #team .team-member .team-image .team-overlay
+{
+    background: rgba(52, 152, 219, 0.5);
+}
+
+/* skyblue color ends */
+
+/* purple color starts */
+
+.purple #banner .bg1 .banner-text h3::before,
+.purple .navbar-light .navbar-nav .nav-link::after,
+.purple #banner .bg1 .banner-text h3::after,
+.purple #banner .bg1 .banner-text h1::before,
+.purple #banner .bg1 .banner-text h1::after,
+.purple #banner .bg1 .banner-text p::before,
+.purple #banner .bg1 .banner-text p::after,
+.purple #membership .membership-item:hover .membership-header h4,
+.purple #membership .membership-item:hover .membership-btn a,
+.purple #routine .nav-tabs .nav-link.active,
+.purple #routine .routine-tab ul li.active
+{
+    background: #B53471;
+}
+
+.purple #banner .banner-item .banner-text h1,
+.purple #about .about-video .about-overly a i,
+.purple #testimonial .ratings i,
+.purple footer .footer-main .footer-item .footer-contact li i,
+.purple footer .footer-copy p a
+{
+    color: #B53471 !important;
+}
+
+.purple #banner .banner-item .banner-text a:hover,
+.purple #banner .slick-dots li.slick-active,
+.purple .testimonial-slider .slick-dots li.slick-active,
+.purple footer .footer-main .footer-item .footer-social .btn:hover
+{
+    border-color: #B53471;
+    background: #B53471;
+}
+
+.purple #gallery .gallery-bg .gallery-item .gallery-overlay,
+.purple #team .team-member .team-image .team-overlay
+{
+    background: rgba(181, 52, 112, 0.5);
+}
+
+/* purple color ends */
+
+/* blue color starts */
+
+.blue #banner .bg1 .banner-text h3::before,
+.blue .navbar-light .navbar-nav .nav-link::after,
+.blue #banner .bg1 .banner-text h3::after,
+.blue #banner .bg1 .banner-text h1::before,
+.blue #banner .bg1 .banner-text h1::after,
+.blue #banner .bg1 .banner-text p::before,
+.blue #banner .bg1 .banner-text p::after,
+.blue #membership .membership-item:hover .membership-header h4,
+.blue #membership .membership-item:hover .membership-btn a,
+.blue #routine .nav-tabs .nav-link.active,
+.blue #routine .routine-tab ul li.active
+{
+    background: #1B1464;
+}
+
+
+.blue #banner .banner-item .banner-text h1,
+.blue #about .about-video .about-overly a i,
+.blue #testimonial .ratings i,
+.blue footer .footer-main .footer-item .footer-contact li i,
+.blue footer .footer-copy p a
+{
+    color: #1B1464 !important;
+}
+
+.blue #banner .banner-item .banner-text a:hover,
+.blue #banner .slick-dots li.slick-active,
+.blue .testimonial-slider .slick-dots li.slick-active,
+.blue footer .footer-main .footer-item .footer-social .btn:hover
+{
+    border-color: #1B1464;
+    background: #1B1464;
+}
+
+.blue #gallery .gallery-bg .gallery-item .gallery-overlay,
+.blue #team .team-member .team-image .team-overlay
+{
+    background: rgba(27, 20, 100, 0.5);
+}
+
+/* skyblue color ends */
+
+
+/* color switcher ends*/
+
+/* color offcanvas starts  */
+
+/* color offcanvas ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  starts  */
+/*  ends */
+
+/*  starts  */
+/*  ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* starts  */
+
+/* ends */
+
+/*==========================
+    color opion ends
+========================== */

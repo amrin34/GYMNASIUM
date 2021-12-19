@@ -1,0 +1,669 @@
+/* =============================
+    extra small device starts
+================================*/
+@media(max-width:575px){
+
+    /* navbar starts */
+
+    .navbar .navbar-brand{
+        position: static !important;
+        padding: 0 10px  !important;
+        transform: skewX(-25deg); 
+    }   
+    .navbar .navbar-brand img{
+        transform: skewX(25deg);
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: #fff;
+    }
+
+    .navbar-light .navbar-toggler i {
+        color: #fff;
+    }
+    
+    .navbar .navbar-nav{
+        text-align: center;
+        background: rgba(226, 62, 56, 0.5); 
+    }
+
+    .navbar-light .navbar-nav .nav-item .nav-link{
+        z-index: 5;
+    }
+
+    .navbar-light .navbar-nav .nav-item .nav-link::before{
+        width: 0;
+        height: 100%;
+    }
+
+    .navbar-light .navbar-nav .nav-item .nav-link:hover:before{
+        width: 100%;
+    }
+    /* navbar ends */
+
+    /* banner css starts */
+
+    #banner .bg1 .banner-text h3::before,
+    #banner .bg1 .banner-text h3::after,
+    #banner .bg1 .banner-text h1::before,
+    #banner .bg1 .banner-text h1::after,
+    #banner .bg1 .banner-text p::before,
+    #banner .bg1 .banner-text p::after
+    {
+        display: none;
+    }
+
+    #banner .bg1 .banner-text p{
+        padding: 0;
+        text-align: left;
+    }
+
+    #banner .banner-text h3{
+        font-style: 24px;
+    }
+
+    #banner .banner-text h1{
+        font-style: 48px;
+    }
+    /* banner css ends */
+
+    /* about css starts */
+    #about{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #about .about-detail p{
+        padding: 0;
+    }
+
+    #about .about-video{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* about css ends */
+
+    /* gallery css starts */
+    #gallery{
+        padding-bottom: 56px;
+    }
+    /* gallery css ends */
+
+    /* team css starts */
+
+    #team .team-member{
+        margin-top: 40px;
+    }
+    /* team css ends */
+
+    /* testimonial css starts */
+
+    #testimonial .card-title{
+        margin: 4px;
+    }
+
+    /* testimonial css ends */
+
+    /* membership css starts */
+
+    #membership{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    /* membership css ends */
+
+    /* funfact css starts */
+
+    #funfact{
+        padding-bottom: 26px;
+    }
+
+    #funfact .fun-item{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* funfact css ends */
+
+
+    /* rounte css starts */
+    #routine{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #routine .nav-tabs .nav-item{
+        width: 99%;
+        margin-bottom: 2px;
+    }
+    #routine .routine-tab ul li{
+        width: 47.9%;
+        margin-right: 6px !important;
+    } 
+
+    /* rounte  css ends */
+
+}
+
+/* =============================
+    extra small device ends
+================================*/
+
+/* =============================
+    small device starts
+================================*/
+@media (min-width:576px) and (max-width:767px){
+
+    /* navbar starts */
+
+    .navbar .navbar-brand{
+        position: static !important;
+        padding: 0 10px  !important;
+        transform: skewX(-25deg); 
+    }   
+    .navbar .navbar-brand img{
+        transform: skewX(25deg);
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: #fff;
+    }
+
+    .navbar-light .navbar-toggler i {
+        color: #fff;
+    }
+    
+    .navbar .navbar-nav{
+        text-align: center;
+        background: rgba(226, 62, 56, 0.5); 
+    }
+
+    .navbar-light .navbar-nav .nav-item .nav-link{
+        z-index: 5;
+    }
+
+    .navbar-light .navbar-nav .nav-item .nav-link::before{
+        width: 0;
+        height: 100%;
+    }
+
+    .navbar-light .navbar-nav .nav-item .nav-link:hover:before{
+        width: 100%;
+    }
+    /* navbar ends */
+
+    /* banner css starts */
+
+    #banner .bg1 .banner-text h3::before,
+    #banner .bg1 .banner-text h3::after,
+    #banner .bg1 .banner-text h1::before,
+    #banner .bg1 .banner-text h1::after,
+    #banner .bg1 .banner-text p::before,
+    #banner .bg1 .banner-text p::after
+    {
+        display: none;
+    }
+
+    #banner .bg1 .banner-text p{
+        padding: 0;
+        text-align: left;
+    }
+
+    #banner .banner-text h3{
+        font-style: 24px;
+    }
+
+    #banner .banner-text h1{
+        font-style: 48px;
+    }
+    /* banner css ends */
+/* navbar starts */
+
+.navbar .navbar-brand{
+    position: static !important;
+    padding: 0 10px  !important;
+    transform: skewX(-25deg); 
+}   
+.navbar .navbar-brand img{
+    transform: skewX(25deg);
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-light .navbar-toggler i {
+    color: #fff;
+}
+
+.navbar .navbar-nav{
+    text-align: center;
+    background: rgba(226, 62, 56, 0.5); 
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link{
+    z-index: 5;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link::before{
+    width: 0;
+    height: 100%;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover:before{
+    width: 100%;
+}
+/* navbar ends */
+
+/* banner css starts */
+
+#banner .bg1 .banner-text h3::before,
+#banner .bg1 .banner-text h3::after,
+#banner .bg1 .banner-text h1::before,
+#banner .bg1 .banner-text h1::after,
+#banner .bg1 .banner-text p::before,
+#banner .bg1 .banner-text p::after
+{
+    display: none;
+}
+
+#banner .bg1 .banner-text p{
+    padding: 0;
+    text-align: left;
+}
+
+#banner .banner-text h3{
+    font-style: 24px;
+}
+
+#banner .banner-text h1{
+    font-style: 48px;
+}
+/* banner css ends */
+
+/* about css starts */
+#about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#about .about-detail p{
+    padding: 0;
+}
+
+#about .about-video{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* about css ends */
+
+
+/* rounte css starts */
+#routine{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.routine-menu .nav-tabs .monday{
+    margin-right: 3px;
+}
+
+#routine .nav-tabs .nav-item{
+    width: 32.5%;
+    margin-bottom: 6px;
+    
+}
+
+#routine .routine-tab ul li{
+    width: 31.9%;
+} 
+
+/* rounte  css ends */
+
+
+#banner .bg1 .banner-text h3::before {
+    content: '';
+    width: 167px;
+    height: 3px;
+    background: var(--brand);
+    position: absolute;
+    left: 69px;
+    top: 20px;
+    }
+    #banner .bg1 .banner-text h1::before {
+    content: '';
+    width: 3px;
+    height: 199px;
+    background: var(--brand);
+    position: absolute;
+    left: 69px;
+    top: -23px;
+    }
+
+    #banner .bg1 .banner-text p {
+    padding: 0px 100px;
+    }
+
+    #banner .bg1 .banner-text p::before {
+    content: '';
+    width: 71px;
+    height: 3px;
+    background: var(--brand);
+    position: absolute;
+    left: 69px;
+    top: 81px;
+    }
+
+    #banner .bg1 .banner-text h3::after {
+    content: '';
+    width: 118px;
+    height: 3px;
+    background: var(--brand);
+    position: absolute;
+    right: 69px;
+    top: 20px;
+    }
+    #banner .bg1 .banner-text h1::after {
+    content: '';
+    width: 3px;
+    height: 199px;
+    background: var(--brand);
+    position: absolute;
+    right: 69px;
+    top: -23px;
+    }
+
+    #banner .bg1 .banner-text p::after {
+    content: '';
+    width: 45px;
+    height: 3px;
+    background: var(--brand);
+    position: absolute;
+    right: 69px;
+    top: 81px;
+    }
+}
+
+/* =============================
+    small device ends
+================================*/
+
+/* =============================
+    medium device starts
+================================*/
+
+@media (min-width:768px) and (max-width:991px){
+
+    .navbar .navbar-brand{
+        position: static !important;
+        padding: 0 10px  !important;
+        transform: skewX(-25deg); 
+    }   
+    .navbar .navbar-brand img{
+        transform: skewX(25deg);
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: #fff;
+    }
+
+    .navbar-light .navbar-toggler i {
+        color: #fff;
+    }
+    
+    .navbar .navbar-nav{
+        text-align: center;
+        background: rgba(226, 62, 56, 0.5); 
+    }
+
+    .navbar-light .navbar-nav .nav-item .nav-link{
+        z-index: 5;
+    }
+
+    .navbar-light .navbar-nav .nav-item .nav-link::before{
+        width: 0;
+        height: 100%;
+    }
+
+    .navbar-light .navbar-nav .nav-item .nav-link:hover:before{
+        width: 100%;
+    }
+    /* navbar ends */
+
+    /* banner css starts */
+
+#banner .bg1 .banner-text h3::before{
+    left: 69px;
+    top: 20px;
+    }
+    #banner .bg1 .banner-text h1::before {
+    left: 69px;
+    top: -23px;
+    }
+
+    #banner .bg1 .banner-text p {
+    padding: 0px 100px;
+    }
+
+    #banner .bg1 .banner-text p::before {
+    left: 69px;
+    top: 81px;
+    }
+
+    #banner .bg1 .banner-text h3::after {
+    right: 69px;
+    top: 20px;
+    }
+    #banner .bg1 .banner-text h1::after {
+    right: 69px;
+    top: -23px;
+    }
+
+    #banner .bg1 .banner-text p::after {
+    right: 69px;
+    top: 81px;
+    } 
+
+    /*banner css ends  */
+
+
+    /* about css starts */
+#about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#about .about-detail p{
+    padding: 0;
+}
+
+#about .about-video{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* about css ends */
+
+/* rounte css starts */
+#routine{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.routine-menu .nav-tabs .monday{
+    margin-right: 3px;
+}
+
+#routine .nav-tabs .nav-item{
+    width: 32.5%;
+    margin-bottom: 6px;
+    
+}
+
+#routine .routine-tab ul li{
+    width: 48.8%;
+} 
+
+/* routine  css ends */
+
+}
+
+/* =============================
+    medium device ends
+================================*/
+
+
+/* ===============================
+    large device responcive starts
+================================= */
+
+@media (min-width:992px) and (max-width:1199px){
+
+/* banner css starts */
+#banner .bg1 .banner-text h3::before
+    {
+        left: -37px;
+        top: 22px;
+        }
+        
+    #banner .bg1 .banner-text h3::after{
+        right: -37px;
+        top: 22px;
+        width: 112px;
+        }
+
+    #banner .bg1 .banner-text h1::before{
+        left: -37px;
+    }
+        
+    #banner .bg1 .banner-text h1::after{
+        right: -37px;
+        }
+    #banner .bg1 .banner-text p::before{
+        left: -37px;
+        width: 72px;
+    }
+        
+    #banner .bg1 .banner-text p::after{
+        right: -37px;
+        width: 43px;
+    }
+        
+    /*banner css ends  */
+
+    /*routine css starts  */
+
+    #routine{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #routine .routine-menu  ul li{
+        width: 16%;
+        
+    }
+
+    .routine-menu .nav-tabs .monday{
+        margin-right: 6px;
+    }
+
+    #routine .routine-tab ul li{
+        width: 19.3%;
+    }
+
+    /*routine css ends  */
+
+    /*brand css starts  */
+
+    .brand-slider .prev-arrow{
+        left: -20px;
+    }
+
+    .brand-slider .next-arrow{
+        right: -20px;
+    }
+
+    /*footer css starts  */
+
+    footer .footer-main .footer-item .opening-hours li span {
+        display: inline-block;
+        width: 87px;
+    }
+
+}
+
+/* ===================================
+        large device ends
+====================================== */
+
+
+/* ===================================
+    extra large device starts
+====================================== */
+
+@media (min-width:1200px) and (max-width:1399px){
+
+    #banner .bg1 .banner-text h3::before{
+        width: 186px;
+        
+    }
+
+    #banner .bg1 .banner-text h3::after {
+        width: 130px;
+    }
+
+    #banner .bg1 .banner-text p::before{
+        width: 87px;
+    }
+
+    #banner .bg1 .banner-text p::after{
+        width: 60px;
+    }
+}
+
+/* ===================================
+    extra large device ends
+====================================== */
+
+/* ===================================
+    extra extra large device starts
+====================================== */
+
+@media (min-width:1400px){
+    #banner .bg1 .banner-text h3::before {
+        
+        left: 50px;
+    }
+
+    #banner .bg1 .banner-text h3::after {
+        
+        right: 50px;
+    }
+
+    #banner .bg1 .banner-text h1::before{
+        left: 50px;
+    }
+
+    #banner .bg1 .banner-text h1::after{
+        right: 50px;
+    }
+
+    #banner .bg1 .banner-text p::before{
+        left: 50px;
+    }
+
+    #banner .bg1 .banner-text p::after{
+        right: 50px;
+    }
+
+    #banner .bg1 .banner-text p{
+        padding: 0 67px;
+    }
+}
+
+/* ===================================
+    extra extra large device ends
+====================================== */
