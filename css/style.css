@@ -959,7 +959,7 @@ color swicher starts
     height: 50px;
     background: cyan;
     position: fixed;
-    top: 200px;
+    /* top: 200px; */
     right: -200px;
     right: 0;
     bottom: 30px;
@@ -1280,20 +1280,6 @@ color swicher starts
 
 /*  starts  */
 /*  ends */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* starts  */
 

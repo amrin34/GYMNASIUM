@@ -97,7 +97,7 @@ $(document).ready(function(){
         // brand slider
 
         $('.brand-slider').slick({
-            arrows: true,
+            arrows: false,
             slidesToShow: 5,
             centerMode: true,
             centerPadding:'0px',
